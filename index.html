@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./index.css">s
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
      <title>Rico's Web Portfolio</title>
 </head>
@@ -110,34 +111,59 @@
 
 
 
-  <header class="relative h-full text-center flex items-center justify-center md:justify-around flex-col md:flex-row">
+  <header class="relative h-full text-center flex items-center justify-center  flex-col">
+
+    <div class="flex items-center justify-center flex-col md:flex-row ">
+        <img src="./rico pic.jpg" class="rounded-full z-10 mb-5 md:mr-10"></img>
+
+        <h1 class="text-gray-100 uppercase tracking-[0.2vw] leading-[1.2] text-[4vw] md:text-[3vw] text-center bold">
+            
+            <span class="block text-[7vw] md:text-[5vw] tracking-[.5vw] bg-black/[.10] rounded-3xl">
+                Enrico Dela Rosa
+            </span>
+            Full Stack Web Developer
+        </h1>
+    </div>
+
+    <div class="p-4 mt-5 md:mt-0">
+        <p class="bg-white/[.20] rounded-lg md:text-2xl font-semibold text-justify p-4 md:p-2 text-base">
+            The worse your old code looks, the better you are now.
+        </p>
+    </div>
 
 
-    <img src="./rico pic.jpg" class="rounded-full z-10 mb-5"></img>
-
-    <h1 class="text-white uppercase tracking-[3vw] leading-[1.2] text-[3vh] text-center">
-      Explore
-      <span class="block text-[10vw] tracking-[-.5vw] bg-black/[0.15]">Welcome</span>
-    </h1>
   </header>
 
-<main class="bg-black/[0.66] text-white relative p-4">
+<main>
 
-<div>
-    <p>Montana is a western state defined by its diverse terrain ranging from the Rocky Mountains to the Great Plains. Its wide-open spaces include Glacier National Park, a vast wilderness preserve that passes into Canada. The park’s many snow-capped peaks, lakes and alpine hiking trails are showcased along its famed Going-to-the-Sun Road, stretching 50 miles.</p>
-  
-    <p>Montana State University is ranked in the top tier of U.S. research institutions by the Carnegie Foundation for the Advancement of Teaching.  Located in Bozeman Montana, Montana State is an accredited land grant university offering bachelor's, master's and doctoral degrees in 150 fields of study.</p>
-  
-    <p>Maybe it's the independent frontier spirit, wild and free and oh-so-American, that earned Montana its 'live and let live' state motto. The sky seems bigger and bluer. The air is crisp and pine-scented. From mountains that drop into undulating ranchlands to brick brewhouses and the shaggy grizzly found lapping at an ice-blue glacier lake, Montana brings you to that euphoric place, naturally. And then it remains with you long after you've left its beautiful spaces behind.
-  </p>
+<section data-aos="fade-up" class="bg-black/[0.66] text-white relative p-4 my-4 mx-2 " >
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla cumque sapiente esse velit, laudantium inventore ut deserunt, minus placeat vel odio repellat ipsum ipsam magni distinctio atque odit iste voluptatum!
+    </p>
 
-</div>
+</section>
+
+<section data-aos="fade-up" class="bg-black/[0.66] text-white relative p-4 my-4 mx-2">
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae dolore repellendus, optio eveniet dolorum rem! Maiores facere, veritatis sit voluptatem eaque veniam tenetur commodi asperiores repudiandae. Molestias tenetur eaque nemo.
+
+    </p>
+
+</section>
+
+
+
 
 </main>
 
 
 
 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init();
+</script>
 
 </body>
 </html>
