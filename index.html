@@ -19,7 +19,7 @@
     muted
     class = "object-cover w-screen h-screen fixed top-0 left-0 z-0"
   >
-      <source src="./Full video.mp4" type="video/mp4">
+      <source src="./resources/Full video.mp4" type="video/mp4">
   </video>
 
 <navbar class="z-50 fixed top-5 left-3 flex justify-center space-x-2 shadow">
@@ -66,6 +66,7 @@
         </ul>
 
         <div class="h-full flex flex-col justify-center items-center">
+            <a href="https://www.linkedin.com/in/enricodelarosa/" target="_blank">
             <svg 
                 class="w-10 h-10 text-blue-500 fill-current mb-4"
                 xmlns="http://www.w3.org/2000/svg"
@@ -74,7 +75,9 @@
                     d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
                 ></path>
             </svg>
+            </a>
 
+            <a href="https://gitlab.com/ricodelarosa" target="_blank">
             <svg 
                 class="w-16 h-16" 
                 xmlns="http://www.w3.org/2000/svg" 
@@ -89,6 +92,7 @@
                         <path class="cls-2" d="M132.58,185.84A88.19,88.19,0,0,0,97.44,170l-.26.69a48.54,48.54,0,0,0,16.1,56.1l.09.07.24.17,39.82,29.82s17-12.85,36.57-27.64Z"/>
                     </g>
             </svg>
+            </a>
         </div>
 
     </div>
@@ -114,7 +118,7 @@
   <header class="relative h-full text-center flex items-center justify-center  flex-col">
 
     <div class="flex items-center justify-center flex-col md:flex-row ">
-        <img src="./rico pic.jpg" class="rounded-full z-10 mb-5 md:mr-10"></img>
+        <img src="./resources/rico pic.jpg" class="rounded-full z-10 mb-5 md:mr-10"></img>
 
         <h1 class="text-gray-100 uppercase tracking-[0.2vw] leading-[1.2] text-[4vw] md:text-[3vw] text-center bold">
             
@@ -127,7 +131,7 @@
 
     <div class="p-4 mt-5 md:mt-0">
         <p class="bg-white/[.20] rounded-lg md:text-2xl font-semibold text-justify p-4 md:p-2 text-base">
-            The worse your old code looks, the better you are now.
+            Your old code is supposed to look bad. That's how you know you got better.
         </p>
     </div>
 
@@ -136,18 +140,49 @@
 
 <main>
 
-<section data-aos="fade-up" class="bg-black/[0.66] text-white relative p-4 my-4 mx-2 " >
+<section id="aboutme" data-aos="fade-up" class="bg-black/[0.66] text-white relative p-4 my-4 mx-2 " >
     <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla cumque sapiente esse velit, laudantium inventore ut deserunt, minus placeat vel odio repellat ipsum ipsam magni distinctio atque odit iste voluptatum!
     </p>
 
 </section>
 
-<section data-aos="fade-up" class="bg-black/[0.66] text-white relative p-4 my-4 mx-2">
-    <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae dolore repellendus, optio eveniet dolorum rem! Maiores facere, veritatis sit voluptatem eaque veniam tenetur commodi asperiores repudiandae. Molestias tenetur eaque nemo.
+<section id="projects" data-aos="fade-up" class="relative my-4 mx-2 flex justify-evenly">
+    <!-- Card 1 start -->
+    <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 text-center">
+        <a href="#">
+            <img class="rounded-t-lg" src="./resources/weather-ap.png" alt="picture of weatherapp" />
+        </a>
+        <div class="p-5">
+            <a href="#">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Weather App</h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 text-justify">A front end weather app that I built using <span class="text-white">React JS</span>. The app fetches data from a weather api and displays weather information to the user based on their location.</p>
+            <a href="https://rico-weather.surge.sh/" target="_blank" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                Open App
+                <svg aria-hidden="true" class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+            </a>
+        </div>
+    </div>
+    <!-- card 1 end -->
 
-    </p>
+    <!-- card 2 start -->
+    <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 text-center">
+        <a href="#">
+            <img class="rounded-t-lg" src="./resources/door game.png" alt="" />
+        </a>
+        <div class="p-5">
+            <a href="#">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Door Game</h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 text-justify">Created a game using <span class="text-white">vanilla JS</span>. There are 3 doors and you have to guess where the goat is in 2 tries. What's the best win percentage you can get?</p>
+            <a href="https://rico-door-game.surge.sh/" target="_blank" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                Play game
+                <svg aria-hidden="true" class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+            </a>
+        </div>
+    </div>
+    <!-- card 2 end -->
 
 </section>
 

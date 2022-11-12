@@ -17,6 +17,7 @@ body::-webkit-scrollbar {
     font-family: "Syncopate", sans-serif;
   }
 
-  #rico-pic {
-    
+  #projects img {
+    width: 500px;
+    height: 300px;
   }
