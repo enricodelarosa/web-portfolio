@@ -13,6 +13,10 @@ body::-webkit-scrollbar {
     margin: 1rem auto;
   }
 
+  section {
+    overflow:auto
+  }
+
   h1 {
     font-family: "Syncopate", sans-serif;
   }
