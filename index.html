@@ -4,7 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+
+
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+
+
+
     <link rel="stylesheet" href="./index.css">
 
     <meta property="og:title" content="Rico's Web Portfolio" />
@@ -218,7 +227,6 @@
             <p class="mb-3 font-normal text-black dark:text-gray-400 text-justify">A front end weather app that I built using <span class="text-white">React JS</span>. The app fetches data from a weather api and displays weather information to the user based on their location.</p>
             <a href="https://rico-weather.surge.sh/" target="_blank" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                 Open App
-                <svg aria-hidden="true" class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
             </a>
         </div>
     </div>
@@ -236,7 +244,6 @@
             <p class="mb-3 font-normal text-black dark:text-gray-400 text-justify">Created a simple game using <span class="text-white">vanilla JS</span>. There are 3 doors and you have one change to guess where the goat is. Can you top the high score list? The datbase uses <span class="text-white">MongoDB</span> and the back end uses <span class="text-white">NodeJs</span> on top of <span class="text-white">Nginx</span>.</p>
             <a href="/play/doorgame/" target="_blank" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                 Play game
-                <svg aria-hidden="true" class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
             </a>
         </div>
     </div>
@@ -253,13 +260,18 @@
                 </a>
                 <p class="mb-3 font-normal text-black dark:text-gray-400 text-justify">Re-created the Monty Hall Game and created a <span class="text-white">simulator</span>. The simulator uses <span class="text-white">Plotly</span> to demonstrate the surprising fact of the <span class="text-white">Monty Hall problem</span>.</p>
 
+                <button type="button" id="monty-modal"
+                class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mr-4"
+                data-bs-toggle="modal" data-bs-target="#exampleModalFullscreen">
+                    Monty Hall?
+                </button>
+
+
                 <a href="/play/montyhallgame/" target="_blank" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mr-4">
-                    Play game
-                    <svg aria-hidden="true" class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    Play
                 </a>
                 <a href="/montyhallsimulator/" target="_blank" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                    Open Simulator
-                    <svg aria-hidden="true" class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    Simulator
                 </a>
             </div>
         </div>
@@ -277,7 +289,6 @@
             <p class="mb-3 font-normal text-black dark:text-gray-400 text-justify">A website that I started on January 2022 to try out my newly found html and css skills and to promote one of my favorite sports—running. I recently upgraded it to use <span class="text-white">PHP</span> for templating. This is being hosted on an <span class="text-white">EC2</span> Instance.</p>
             <a href="https://www.runforyourlife.ph" target="_blank" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                 Open Website
-                <svg aria-hidden="true" class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
             </a>
         </div>
     </div>
@@ -326,12 +337,53 @@
 
 </section>
 
+<!-- Button trigger modal -->
+
+<!-- thumbnail of video -->
+<!-- pause video on close -->
+<!-- Modal -->
+<div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto"
+  id="exampleModalFullscreen" tabindex="-1" aria-labelledby="exampleModalFullscreenLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen relative w-auto pointer-events-none">
+    <div
+      class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-md outline-none text-current">
+      <div
+        class="modal-header flex flex-shrink-0 items-center justify-between p-4 border-b border-gray-200 rounded-t-md">
+        <h5 class="text-xl font-medium leading-normal text-gray-800" id="exampleModalFullscreenLabel">
+          Monty Hall Problem
+        </h5>
+      </div>
+      <div class="modal-body relative p-4 text-center">
+        <video id="monty-hall-video"
+        controls preload playsinline="false" poster="./resources/montyhallposter.png" class="md:w-4/6 md:h-9/12 w-full mx-auto">
+          <source src='./resources/montyhall.mp4' type="video/mp4"></source>
+
+        </video>
+
+        <h3 class="text-black font-medium text-2xl">Which is the optimal choice?</h3>
+
+        <a href="/play/montyhallgame" class="md:inline"><button type="button" class="mt-2 inline-block px-6 py-2.5 bg-green-600 text-white font-medium text-2xl leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-purple-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-purple-800 active:shadow-lg">Play Game!</button></a>
+        
+      </div>
+      <div
+        class="modal-footer flex flex-shrink-0 flex-wrap items-center justify-end p-4 border-t border-gray-200 rounded-b-md">
+        <button type="button" id="monty-close"
+          class="inline-block px-6 py-2.5 bg-purple-600 text-white font-medium text-xs md:text-xl leading-tight uppercase rounded shadow-md hover:bg-purple-700 hover:shadow-lg focus:bg-purple-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-purple-800 active:shadow-lg transition duration-150 ease-in-out"
+          data-bs-dismiss="modal">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
 </main>
 
 
 <!-- Add clicking on email button will copy my email to the clipboad, with a notification -->
 <!-- on md up screens, when scrolling down the navbar will dissappera and the navbar will become a button I think I can use aos for this -->
 
+<script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 <script>
