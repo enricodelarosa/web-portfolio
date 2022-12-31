@@ -66,3 +66,21 @@ body::-webkit-scrollbar {
    .shadow-box {
     box-shadow: 0 5px 10px rgba(0,0,0,1);
    }
+
+   .transparent-text-no-box {
+    /* backdrop-filter: blur(12px);
+    background: rgba(white, 0.2); */
+    text-shadow: 0 5px 10px rgba(0,0,0,1);
+    mix-blend-mode: overlay;
+    color: #fff;
+   }
+
+   .gray-outline {
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: #ebecf0;
+   }
+
+   .circle-shadow {
+    box-shadow: 0 0 98px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+   }

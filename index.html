@@ -166,24 +166,28 @@
 
 
 
-
+<!-- 
+    Add code to hide header to header button upon scrolling
+    Add animated down arrow that signals that it's possible to scroll down but his dissappears upon actually scrolling down
+    Add shadow of image
+ -->
 
   <header id="home" class="relative h-full text-center flex items-center justify-center  flex-col viewport-header">
 
     <div class="flex items-center justify-center flex-col md:flex-row">
-        <img src="./resources/rico pic.jpg" class="rounded-full z-10 mb-5 md:mr-10 box-shadow"></img>
+        <img src="./resources/rico pic.jpg" class="z-10 mb-5 md:mr-10 circle-shadow md:hidden"></img>
 
         <h1 class="uppercase tracking-[0.2vw] leading-[1.2] text-[4vw] md:text-[3vw] text-center bold">
             
-            <span class="block text-[7vw] md:text-[5vw] tracking-[.5vw] transparent-text rounded-lg px-2 frosted-glass">
+            <span class="block text-[7vw] md:text-[5vw] tracking-[.5vw] transparent-text-no-box rounded-lg px-2 gray-outline font-bold">
                 Enrico Dela Rosa
             </span>
-            <span class="transparent-text rounded-md mt-4 inline-block px-1">Full Stack Web Developer<span>
+            <span class="transparent-text rounded-md mt-4 inline-block px-1 gray-outline frosted-glass">Full Stack Web Developer<span>
         </h1>
     </div>
 
     <div class="p-4 mt-5 md:mt-0">
-        <p class="rounded-lg md:text-2xl font-semibold text-justify p-4 md:p-2 text-base bg-black frosted-glass text-white transparent-text">
+        <p class="rounded-lg md:text-2xl font-semibold text-justify p-4 md:p-2 text-base bg-black frosted-glass text-white transparent-text gray-outline">
             The purpose of life is to be defeated by greater and greater things.
         </p>
     </div>
@@ -209,9 +213,14 @@
 
 
 
-<!-- <section id="projects" class="relative flex justify-center" data-aos="fade-up">
-    <h5 class="mb-2 text-3xl font-bold text-gray-900 dark:text-white">Projects</h5>
-</section> -->
+<div id="projects-label" class="relative text-center flex items-center justify-center">
+
+        <p class="text-3xl font-bold text-white transparent-text-no-box uppercase gray-outline tracking-[0.8vw]">
+            Projects
+        </p>
+
+
+</div>
 
 <section id ="projects" class="relative mx-2 flex justify-evenly flex-wrap">
     
