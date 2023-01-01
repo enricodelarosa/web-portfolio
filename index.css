@@ -75,8 +75,8 @@ body::-webkit-scrollbar {
     /* backdrop-filter: blur(12px);
     background: rgba(white, 0.2); */
     text-shadow: 0 5px 10px rgba(0,0,0,1);
-    mix-blend-mode: overlay;
-    color: #fff;
+    /* mix-blend-mode: overlay; */
+    color:rgba(255, 255, 255, .1);
     
     /* background-color: rgba(255, 255, 255, .1);  
     backdrop-filter: opacity(1);
