@@ -73,14 +73,13 @@ body::-webkit-scrollbar {
     text-shadow: 0 5px 10px rgba(0,0,0,1);
     mix-blend-mode: overlay;
     color: #fff;
-    box-shadow: 0 5px 10px rgba(0,0,0,1);
     
    }
 
-   .gray-outline {
+   /* .gray-outline {
     -webkit-text-stroke-width: 0.1px;
     -webkit-text-stroke-color: #ebecf0;
-   }
+   } */
 
    .circle-shadow {
     box-shadow: 0 0 98px 6px rgba(0, 0, 0, 0.2);
