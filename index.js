@@ -22,3 +22,15 @@ montyModal.addEventListener('click', () => {
 montyhallCloseBtnElement.addEventListener('click', () => {
     montyhallVideo.pause();
 });
+
+const scrollSignal = document.getElementById('scroll-signal')
+
+window.addEventListener(`scroll`, function (e) {
+  const heroOpas = this.scrollY / 1000;
+  if (heroOpas === 0) {
+    scrollSignal.style.visibility = 'visible';
+  }
+  if (heroOpas > 0) {
+    scrollSignal.style.visibility = 'hidden';
+  }
+});

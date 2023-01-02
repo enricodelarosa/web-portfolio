@@ -142,6 +142,6 @@ body::-webkit-scrollbar {
   }
 
   .fade {
-    visibility: hidden;
+    opacity: 0;
     transition: 1s all ease-out;
   }
