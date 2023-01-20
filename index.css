@@ -145,3 +145,10 @@ body::-webkit-scrollbar {
     opacity: 0;
     transition: 1s all ease-out;
   }
+
+
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15%;
+    padding: 1.3rem 1rem;
+  }
